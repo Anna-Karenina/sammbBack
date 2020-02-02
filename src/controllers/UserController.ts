@@ -45,10 +45,7 @@ class UserController{
     })
     .catch(reason => {
       res.status(500).json({
-        status: 'error',
-        statusMessage: reason,
         message: 'Такой пользователь уже зарегистрирован',
-        variants: 'error'
       })
     });
   }
